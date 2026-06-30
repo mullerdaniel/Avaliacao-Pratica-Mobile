@@ -34,6 +34,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
+    <!-- Mostrar a quantidade de peças que foram registradas no sistema -->
+    <TextView
+        android:id="@+id/tvPecas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Peças: 0"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@id/etLinha"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
