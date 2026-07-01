@@ -51,12 +51,42 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
+        android:backgroundTint="#28D128"
         android:padding="14dp"
         android:text="Iniciar Produção"
         android:textColor="#FFFFFF"
-        app:layout_constraintTop_toBottomOf="@id/tvPecas"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/tvPecas" />
 
+    <!-- Botão que vai ficar registrando as peças -->
+    <Button
+        android:id="@+id/btnRegistrar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#03CDFF"
+        android:enabled="false"
+        android:padding="14dp"
+        android:text="Registrar Peça"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnIniciar" />
+
+    <!-- Botão que vai finalizar a produção e vai ir para a segunda tela -->
+    <Button
+        android:id="@+id/btnFinalizar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="240dp"
+        android:backgroundTint="#C31010"
+        android:padding="14dp"
+        android:text="Finalizar Produção"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnRegistrar" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
