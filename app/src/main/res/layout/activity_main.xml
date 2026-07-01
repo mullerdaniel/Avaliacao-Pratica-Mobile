@@ -35,17 +35,20 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <!-- Mostrar a quantidade de peças que foram registradas no sistema -->
+
+    <!-- Botão que vai iniciar a produção -->
+
     <TextView
         android:id="@+id/tvPecas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
         android:text="Peças: 0"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/etLinha" />
 
-    <!-- Botão que vai iniciar a produção -->
     <Button
         android:id="@+id/btnIniciar"
         android:layout_width="0dp"
@@ -88,5 +91,14 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btnRegistrar" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="151dp"
+        android:layout_height="135dp"
+        app:srcCompat="@drawable/transferir"
+        tools:layout_editor_absoluteX="101dp"
+        tools:layout_editor_absoluteY="427dp"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
